@@ -27,6 +27,11 @@ if "chat_history" not in st.session_state:
 user_input = st.text_input("Escribe tu mensaje:", "")
 
 if st.button("Enviar") and user_input:
+
+
+
+streamlit
+openai
     response = chatbot_response(user_input)
     st.session_state.chat_history.append(("Tú", user_input))
     st.session_state.chat_history.append(("Bot", response))
